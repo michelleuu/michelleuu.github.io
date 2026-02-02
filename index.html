@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Fonts -->
+    <!-- Fonts: inter, montserrat, open sans, roboto mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- JS -->
+  </head>
+
+  <nav class="nav-bar flex-spacebetween">
+    <a href="index.html">Michelle Zhu</a>
+    <div class="flex-nav-links">
+      <a href="#projects" class="button-nav">Visualizations</a>
+    </div>
+  </nav>
+  <body>
+    <section id="statement">
+      <div>
+        <h1>Hello! My name is Michelle</h1>
+        <h2 id="personal-statement">
+          I’m a UX designer and researcher driven by curiosity and a passion for
+          crafting problems into meaningful, user-centered solutions.
+        </h2>
+      </div>
+    </section>
+
+    <section id="introduction" class="two-col">
+      <div class="intro-content">
+        <h2>About me</h2>
+        <p>
+          A second-year student at Simon Fraser University with concentrations
+          in Human-Centered AI & Data Science, Designing Interactions, and
+          Design & Development for Mobile & Web.
+        </p>
+
+        <p>
+          Pursuing a career in UX design and research, I’m especially interested
+          in understanding user needs and translating insights into thoughtful,
+          intuitive experiences. Outside of academics, I love spending time with
+          my Papillon and exploring new places together.
+        </p>
+      </div>
+      <div class="image-wrapper">
+        <img
+          src="assets/dog.png"
+          alt="my dog holding a clam in his mouth"
+          width="2215"
+          height="2967"
+        />
+      </div>
+    </section>
+
+    <section class="home-container">
+      <section id="education" class="resume-section">
+        <h2 class="home-content-title">Education</h2>
+        <div class="resume-content">
+          <div class="resume-header">
+            <h3>Simon Fraser University</h3>
+            <p>Burnaby, BC</p>
+          </div>
+          <div class="flex-spacebetween">
+            <p>Bachelor of Science in Interactive Arts and Technology</p>
+            <p>Sep 2023 - Present</p>
+          </div>
+          <p>
+            <span class="italicize">Relevant Courses:</span> Design Evaluation,
+            Interaction Design Methods, Interface Design, HCI & Cognition
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="resume-section">
+        <h2 class="home-content-title">Experience</h2>
+        <div class="resume-content">
+          <div class="resume-header">
+            <h3>Ten Ren Tea</h3>
+            <p>Markham, ON</p>
+          </div>
+          <div class="flex-spacebetween">
+            <p class="role">Barista</p>
+            <p>Sep 2022 - July 2023</p>
+          </div>
+        </div>
+
+        <div class="resume-content">
+          <div class="resume-header">
+            <h3>Stormforge 2026</h3>
+            <p>Jan 2026 - present</p>
+          </div>
+          <p class="role">UX/UI Designer & Full-Stack Developer</p>
+          <p>
+            Developing an AI-powered group planning app using Flutter that
+            automates scheduling by coordinating availability, attendance,
+            activities, and travel timing for friend groups.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="resume-section">
+        <h2 class="home-content-title">Projects</h2>
+
+        <div class="resume-content">
+          <div class="resume-header">
+            <h3>Interaction Design for Olá! Cafe & Acai</h3>
+            <p>Sep 2025 - Nov 2025</p>
+          </div>
+          <p class="role">Graphic Designer and Researcher</p>
+          <p>
+            Extensively researched customer and staff experiences through
+            in-person site visits and co-designed a gamified point system to
+            improve the visibility of the café’s existing loyalty program.
+          </p>
+        </div>
+        <div class="resume-content">
+          <div class="resume-header">
+            <h3>PlantSnapper Augmented Reality Biodiversity Guide</h3>
+            <p>Feb 2025 - Apr 2025</p>
+          </div>
+          <p>
+            Conceptualized a hands-free mobile app prototype that uses augmented
+            reality and voice interactions to help hikers, gardeners, and nature
+            enthusiasts identify plants, receive safety tips, and gain plant
+            insights in real time.
+          </p>
+        </div>
+        <div class="resume-content">
+          <div class="resume-header">
+            <h3>Interaction and Visual Design, Jazzdor Music Festival</h3>
+            <p>May 2024 - June 2024</p>
+          </div>
+          <p class="role">Lead Graphic Designer</p>
+          <p>
+            Led visual design and asset creation for Jazzdor Music Festival,
+            balancing experiential and visual elements to craft an impactful
+            identity and enhance user experiences.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section id="images">
+      <h2>Here is a glimpse of some of the work I have created</h2>
+
+      <div class="projects-container">
+        <div class="project">
+          <div class="project-image">
+            <img
+              src="assets/onTrack.png"
+              width="3267"
+              height="1800"
+              alt="multiple phone mockups on a yellow backgroup"
+            />
+          </div>
+          <h3>OnTrack - Focus App</h3>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img
+              src="assets/plantSnapperMockup.png"
+              width="2921"
+              height="1963"
+              alt="person holding a plantsnapper prototype"
+            />
+          </div>
+          <h3>PlantSnapper - AR Biodiversity Guide</h3>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img
+              src="assets/jazzdorThumbnail.png"
+              width="2921"
+              height="1705"
+              alt="pink Jazzdor public installation mockup"
+            />
+          </div>
+          <h3>Jazzdor Music Festival - Visual Direction</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="contact">
+        <h2>Let's Connect!</h2>
+        <ul>
+          <li><a href="mailto:michellezed2018@gmail.com">Email</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/michelle-z-/">LinkedIn</a>
+          </li>
+          <li><a href="https://github.com/michelleuu">GitHub</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
