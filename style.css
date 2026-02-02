@@ -60,6 +60,12 @@ footer {
   margin-left: 26rem;
   margin-right: 26rem;
 }
+@media (max-width: 85rem) {
+  .home-container {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
 
 @media (max-width: 58rem) {
   #statement,
@@ -189,6 +195,7 @@ li {
 
 .flex-nav-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -198,7 +205,8 @@ li {
 }
 
 .projects-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
 
@@ -225,5 +233,8 @@ li {
     grid-template-columns: 1fr;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
