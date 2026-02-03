@@ -213,15 +213,11 @@ a:active {
 
 .skills-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 60rem;
-}
-.skill {
-  display: flex;
-  gap: 3rem;
+  gap: 2rem;
 }
 
-.skill h3,
 li {
   color: #7a7a7a;
 }
