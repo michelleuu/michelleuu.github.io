@@ -109,7 +109,7 @@ h2 {
 
 #statement h2,
 footer h2 {
-  font-size: 3rem;
+  font-size: clamp(1.6rem, 3vw, 3rem);
   color: #8baaff;
 }
 
