@@ -11,3 +11,8 @@ Personal portfolio for showcasing my skills, projects, data visualizations, and 
 ## Technologies used:
 
 - HTML for structuring content and pages, CSS for styling and layout, and JavaScript for interactive features and SVG visualizations.
+
+## Links
+
+- GitHub repository: https://github.com/michelleuu/michelleuu.github.io
+- Live site: https://michelleuu.github.io/
