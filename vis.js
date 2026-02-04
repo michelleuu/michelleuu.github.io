@@ -238,7 +238,7 @@ createTriangle(
 );
 createCircle(svg2, w2 / 2 - 200, h2 / 2, 10, "#4b4947");
 
-// Right
+// Right ear
 createTriangle(
   svg2,
   w2 / 2 + 200,
@@ -250,3 +250,5 @@ createTriangle(
   "#4b4947",
 );
 createCircle(svg2, w2 / 2 + 200, h2 / 2, 10, "#4b4947");
+
+// ------------ End of kuromi svg art -------------
