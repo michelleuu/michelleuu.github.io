@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <!-- Fonts -->
+    <!-- Fonts: inter, montserrat, open sans, roboto mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylings -->
+    <link rel="stylesheet" href="visualization.css" />
+    <link href="style.css" rel="stylesheet" />
+
+    <script>
+      const options = {
+        config: {
+          // Vega-Lite default configuration
+        },
+        init: (view) => {
+          // initialize tooltip handler
+          view.tooltip(new vegaTooltip.Handler().call);
+        },
+        view: {
+          // view constructor options
+          // remove the loader if you don't want to default to vega-datasets!
+          loader: vega.loader({
+            baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/",
+          }),
+          renderer: "canvas",
+        },
+      };
+
+      // register vega and vega-lite with the API
+      vl.register(vega, vegaLite, options);
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <nav class="nav-bar flex-spacebetween">
+      <a href="index.html">Michelle Zhu</a>
+      <div class="flex-nav-links">
+        <a href="visualizations.html" class="button-nav">Visualizations</a>
+      </div>
+      <div class="flex-nav-links">
+        <a href="videoGameVisualizations.html" class="button-nav"
+          >Vega-Lite Visualizations</a
+        >
+      </div>
+    </nav>
+    <header>
+      <h1>Vega-Lite Assignment 3</h1>
+    </header>
+
+    <div id="visualization-container">
+      <!-- visualization goes into this div you can create multiple divs and give them IDs -->
+      <h2>Visualization 1: global sales by genre and platform</h2>
+      <div class="visualization-section">
+        <div id="view1" class="views"></div>
+        <h3>
+          Visualization 1 Questions/ Prompts: What are the top 5 action games
+          for X360 and PS3 by global sales? How much of NA_sales make up of
+          those global sales?
+        </h3>
+        <div class="grid-analysis">
+          <div id="view1Analysis1" class="views"></div>
+          <div id="view1Analysis2" class="views"></div>
+        </div>
+        <div id="view1Analysis3" class="views"></div>
+      </div>
+
+      <div class="visualization-section">
+        <h2>Visualization 2: Sales Over Time by Platform and Genre</h2>
+        <p>
+          Some genres you can type in the input field: action, adventure,
+          fighting, misc, platform, puzzle, racing, role-playing, shooter,
+          simulation, sports, strategy
+        </p>
+        <input
+          type="text"
+          id="genre-input"
+          placeholder="Enter a Genre"
+          value="Action"
+        />
+        <div id="view2" class="views"></div>
+        <h3>
+          Visualization 2 Questions/ Prompts: What happened between 2008-2013
+          for PS3 and X360? What's the difference between their global sales and
+          NA sales?
+        </h3>
+        <div id="view2Analysis1" class="views"></div>
+      </div>
+      <div class="visualization-section">
+        <h2>Visualization 3: Regional Sales vs. Platform</h2>
+        <div id="view3" class="views"></div>
+        <h3>
+          Visualization 3 Questions/ Prompts: Compare NA sales vs EU sales for
+          all PS2 games. What games did better in EU than NA?
+        </h3>
+        <div id="view3Analysis1" class="views"></div>
+      </div>
+      <div class="visualization-section">
+        <h2>
+          Visualization 4 Tell Us a Visual Story: Consistency of Video Games
+          Sales by Publisher
+        </h2>
+        <div id="view4" class="views"></div>
+        <div id="view4Nintendo" class="views"></div>
+        <h3>
+          Visualization 4 Questions/ Prompts: What are the top sport games that
+          contribute to Electronic Arts sales? How much sales do they generate?
+        </h3>
+        <div class="grid-analysis">
+          <div id="view4Analysis1" class="views"></div>
+          <div class="1-col">
+            <div id="view4Analysis2" class="views"></div>
+            <div id="view4Analysis3" class="views"></div>
+            <div id="view4Analysis4" class="views"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="contact">
+        <h2>Let's Connect!</h2>
+        <ul>
+          <li><a href="mailto:michellezed2018@gmail.com">Email</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/michelle-z-/">LinkedIn</a>
+          </li>
+          <li><a href="https://github.com/michelleuu">GitHub</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="videoGames.js"></script>
+  </body>
+</html>

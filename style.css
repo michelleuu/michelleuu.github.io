@@ -260,7 +260,6 @@ li {
   margin-right: 12rem;
   align-items: center;
 }
-
 @media (max-width: 58rem) {
   .two-col {
     grid-template-columns: 1fr;
